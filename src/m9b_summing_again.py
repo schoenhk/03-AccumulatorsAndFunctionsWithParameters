@@ -4,8 +4,8 @@ in its simplest classic forms:
    SUMMING:       total = total + number
 
 Authors: David Mutchler, Dave Fisher, Vibha Alangar, Mark Hays, Amanda Stouder,
-         their colleagues and PUT_YOUR_NAME_HERE.
-"""  # TODO: 1. PUT YOUR NAME IN THE ABOVE LINE.
+         their colleagues and Hunter Schoenborn.
+"""  # DONE: 1. PUT YOUR NAME IN THE ABOVE LINE.
 
 
 def main():
@@ -29,6 +29,11 @@ def run_test_sum_powers():
     print('Testing the   sum_powers   function:')
     print('--------------------------------------------------')
 
+    expected = 3.80826
+    answer = sum_powers(5, -.3)
+    print('Test 1', expected)
+    print('Test 1', answer)
+
 
 def sum_powers(n, p):
     """
@@ -49,6 +54,14 @@ def sum_powers(n, p):
     #   No fair running the code of  sum_powers  to GENERATE
     #   test cases; that would defeat the purpose of TESTING!
     # ------------------------------------------------------------------
+    x = (n)
+    y = (p)
+    (x, y) = n ** p
+    total = 0
+    for k in range(n):
+        total = total + (k + 1)
+
+    return total
 
 
 def run_test_sum_powers_in_range():
