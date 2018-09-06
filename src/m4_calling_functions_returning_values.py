@@ -233,7 +233,6 @@ def digits_in_power(n, k):
     # ------------------------------------------------------------------
     x = (n ** k)
     p = sum_of_digits(x)
-
     return p
 def run_test_fancy_sums_of_digits():
     """ Tests the   fancy_sums_of_digits   function. """
