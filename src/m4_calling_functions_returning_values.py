@@ -32,7 +32,7 @@ def main():
     #       ** Ask a TA or your professor for help in that case. **
     # ------------------------------------------------------------------
 
-    # m4t_tester.main()
+    m4t_tester.main()
 
 
 def run_test_sum_of_digits():
@@ -207,8 +207,8 @@ def run_test_digits_in_power():
     print('--------------------------------------------------')
 
     # Test 1
-    expected = 8
-    answer = digits_in_power(2, 3)
+    expected = 1728
+    answer = digits_in_power(12, 3)
     print("Test 1", expected)
     print("actual", answer)
 
@@ -232,9 +232,9 @@ def digits_in_power(n, k):
     ####################################################################
     # ------------------------------------------------------------------
     x = (n ** k)
-    sum_of_digits(x)
+    p = sum_of_digits(x)
 
-    return x
+    return p
 def run_test_fancy_sums_of_digits():
     """ Tests the   fancy_sums_of_digits   function. """
     # ------------------------------------------------------------------
